@@ -26,7 +26,7 @@ def load(cars, player, achievements):
 def save(car_dict, player_dict, ach_dict):
     data = {"carstats": car_dict, "player": player_dict, "ach": ach_dict}
     data_string = json.dumps(data, indent=4)
-    with open("gamedata.json", "w") as outfile:
+    with open("src/gamedata.json", "w") as outfile:
         outfile.write(data_string)
 
 

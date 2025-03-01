@@ -108,7 +108,7 @@
     },
     "player": {
         "pb": 0,
-        "coins": 3.0,
+        "coins": 0,
         "car fragments": 0,
         "lvl": 0,
         "exp": 0
