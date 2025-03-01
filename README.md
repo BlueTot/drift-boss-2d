@@ -1,6 +1,6 @@
 # DRIFT BOSS 2D: A MODDED REMAKE OF DRIFT BOSS
 
-Welcome to Drift Boss 2D! This game is a modded remake of the mathplayground.com game drift boss, but in 2 dimensions only. Check out instructions.txt in the 'info' file attached to find out how to play. Installation instructions are below.
+Welcome to Drift Boss 2D! This game is a modded remake of the mathplayground.com game drift boss, but in 2 dimensions only. Check out doc/DOC.md to find out how to play. Installation instructions are below.
 
 ## Installation
 
