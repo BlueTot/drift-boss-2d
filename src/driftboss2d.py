@@ -121,10 +121,10 @@ def main_loop():  # main loop
                         if 230 <= x <= 230 + 40 and 207 <= y <= 230 + 80:
                             mode = 'stats'
 
-            display.blit(pygame.image.load("files/bg.png").convert_alpha(), (0, 0))  # background
-            display.blit(pygame.image.load("files/coin.png").convert_alpha(), (0, 0))  # top left coin img
+            display.blit(pygame.image.load("src/files/bg.png").convert_alpha(), (0, 0))  # background
+            display.blit(pygame.image.load("src/files/coin.png").convert_alpha(), (0, 0))  # top left coin img
             create_text(display, str(round(player.coins)), 25, (0, 0, 0), (45, 17))  # number of coins
-            display.blit(pygame.image.load("files/car_fragment.png").convert_alpha(), (0, 45))
+            display.blit(pygame.image.load("src/files/car_fragment.png").convert_alpha(), (0, 45))
             create_text(display, str(player.car_fragments), 25, (0, 0, 0), (50, 57))  # number of car fragments
             create_text(display, f"BEST: {round(player.pb)}", 25, (0, 0, 0), (190, 15))  # best score
             create_text(display, "DRIFT", 40, (0, 0, 0), (140, 100))  # title
@@ -166,7 +166,7 @@ def main_loop():  # main loop
                     pygame.draw.rect(display, '#0096FF', (197 - len(text) * 2, 325, 95 + len(text) * 4, 40))
                     pygame.draw.rect(display, '#7393B3', (197 - len(text) * 2, 325, 95 + len(text) * 4, 40), width=2)
                     create_text(display, text, 18, '#FFD700', (260 - len(text) * 8, 338))
-                    display.blit(pygame.image.load('files/coin.png').convert_alpha(), (190 - len(text) * 2, 320))
+                    display.blit(pygame.image.load('src/files/coin.png').convert_alpha(), (190 - len(text) * 2, 320))
 
             if (0 < cars.cars[selected_car_index].lvl_req) and \
                     (not player.lvl >= cars.cars[selected_car_index].lvl_req):
@@ -199,14 +199,14 @@ def main_loop():  # main loop
                             player.coins = cars.cars[selected_car_index].upgrade_rarity(player.coins)
                         elif 305 <= x <= 305 + 165 and 320 <= y <= 320 + 40:  # reforge car
                             player.coins = cars.cars[selected_car_index].change_reforge(player.coins)
-            display.blit(pygame.image.load("files/bg.png").convert_alpha(), (0, 0))  # background
+            display.blit(pygame.image.load("src/files/bg.png").convert_alpha(), (0, 0))  # background
             create_text(display, 'STATS', 28, (0, 0, 0), (200, 20))
             pygame.draw.rect(display, "#0096FF", (440, 10, 50, 50))
             pygame.draw.rect(display, "#7393B3", (440, 10, 50, 50), width=2)
             create_text(display, 'BACK', 14, (0, 0, 0), (440, 27))
-            display.blit(pygame.image.load("files/coin.png").convert_alpha(), (0, 0))  # top left coin img
+            display.blit(pygame.image.load("src/files/coin.png").convert_alpha(), (0, 0))  # top left coin img
             create_text(display, str(round(player.coins)), 25, (0, 0, 0), (45, 17))  # number of coins
-            display.blit(pygame.image.load("files/car_fragment.png").convert_alpha(), (0, 45))
+            display.blit(pygame.image.load("src/files/car_fragment.png").convert_alpha(), (0, 45))
             create_text(display, str(player.car_fragments), 25, (0, 0, 0), (50, 57))  # number of car fragments
             pygame.draw.rect(display, (150, 150, 150), (10, 90, 270, 400))
             pygame.draw.rect(display, (100, 100, 100), (10, 90, 270, 400), width=3)

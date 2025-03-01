@@ -19,7 +19,7 @@ class Colours:
 
 
 def create_text(display, text, font_size, colour, pos):
-    font = pygame.font.Font('files/Quick Starter.ttf', font_size)
+    font = pygame.font.Font('src/files/Quick Starter.ttf', font_size)
     x, y = pos
     display.blit(font.render(text, True, colour), (x, y))
 
